@@ -1,4 +1,5 @@
 // .forEach method
+
 const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
 // Iterate over fruits below
@@ -7,7 +8,10 @@ fruits.forEach(function(fruitItem) {
 }
 )
 
+
+
 // .map method
+
 const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
 // Create the secretMessage array below
@@ -25,7 +29,10 @@ const smallNumbers = bigNumbers.map(num => {
 })
 console.log(smallNumbers)
 
+
+
 // .filter method
+
 const randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
 // Call .filter() on randomNumbers below
@@ -40,3 +47,17 @@ const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'
 const longFavoriteWords = favoriteWords.filter(word => {
   return word.length > 7
 })
+
+
+
+// .findIndex() method
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(animalia => {
+  return animalia === 'elephant'
+})
+
+const startsWithS = animals.findIndex(animal => {
+  return animal[0] === 's'
+})
+console.log(startsWithS)
