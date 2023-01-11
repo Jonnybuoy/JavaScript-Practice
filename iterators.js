@@ -74,3 +74,29 @@ const newSum = newNumbers.reduce((accumulator, currentValue) => {
 }, 10) // here 10 acts as a second argument
 
 console.log(newSum)
+
+
+
+// the .some() method
+
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// the .some() method checks that at least one element passes the condition
+
+console.log(words.some((word) => {
+  return word.length < 6;
+}));
+
+// Use filter to create a new array
+const interestingWords = words.filter(word => {
+  return word.length > 5
+})
+
+
+
+// the .every() method
+
+// .every() method checks all elements pass the condition
+console.log(interestingWords.every((word) => { 
+  return word.length > 5
+} ));
