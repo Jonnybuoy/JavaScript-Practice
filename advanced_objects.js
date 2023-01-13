@@ -94,4 +94,30 @@ const robotFactory = (model, mobile) => {
   };
   const {functionality} = robot;
   functionality.beep()
+
+
+// Built-in Object methods
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+// Object.keys() method
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// Object.entries method
+const robotEntries = Object.entries(robot)
+console.log(robotEntries);
+
+// Object.assign method
+const newRobot = {laserBlaster: true, voiceRecognition: true}
+Object.assign(newRobot, robot)
+
+console.log(newRobot);
   
