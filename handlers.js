@@ -14,3 +14,6 @@ const handleFailure = (rejectionReason) => {
 }
 
 checkInventory(order).then(handleSuccess, handleFailure)
+
+// using catch() handler
+checkInventory(order).then(handleSuccess).catch(handleFailure)
